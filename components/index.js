@@ -12,6 +12,7 @@ document.fonts.ready.then(() => {
         stagger: 0.05,
         duration: 1.2,
         delay: 0.4,
+        onComplete: () => self.revert(),
         scrollTrigger: {
           trigger: ".des p",
           start: "clamp(top center)",
@@ -138,7 +139,8 @@ function intro() {
       document.body.style.overflow = "";
       document.querySelector(".intro").style.display = "none";
     },
-    // paused: true,
+
+    delay: 1.5,
   });
   timeline.from(".bar", {
     width: 0,
