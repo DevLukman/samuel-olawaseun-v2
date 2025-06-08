@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //For Footer
-    SplitText.create(".footer-content-1 h1", {
+    SplitText.create(".footer-content-1 h3", {
       type: "chars",
       mask: "chars",
       smartWrap: true,
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
           delay: 0.4,
           onComplete: () => self.revert(),
           scrollTrigger: {
-            trigger: ".footer-content-1 h1",
+            trigger: ".footer-content-1 h3",
             start: "clamp(top 90%)",
             end: "clamp(center bottom)",
           },
