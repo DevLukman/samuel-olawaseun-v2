@@ -87,7 +87,6 @@ img {
   flex-direction: column;
   padding: 1rem;
   padding-top: 0.5rem;
-  /* display: none; */
 }
 
 .bar-container {
@@ -749,7 +748,7 @@ h5 {
 }
 
 .contact-content-2 i {
-  font-size: 4em;
+  font-size: 4rem;
   color: var(--main-clr);
 }
 .contact-content-3 {
@@ -757,10 +756,12 @@ h5 {
 }
 .contact-content-3 p {
   color: var(--main-clr);
-  font-size: 14px;
+  font-size: 1.1rem;
+  line-height: 1.4;
 }
 .contact-content-3 a {
   color: var(--main-clr);
+  font-size: 1rem;
 }
 /* contact end */
 
@@ -1026,7 +1027,8 @@ h5 {
     width: 100%;
   }
   .contact-content-1 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: center;
   }
   /* contact-section end*/
   .footer-content-1 h1 {

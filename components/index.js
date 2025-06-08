@@ -10,8 +10,8 @@ document.fonts.ready.then(() => {
         yPercent: 100,
         ease: "expo.inOut",
         stagger: 0.05,
-        duration: 1.2,
-        delay: 0.4,
+        duration: 1.5,
+        delay: 0.5,
         onComplete: () => self.revert(),
         scrollTrigger: {
           trigger: ".des p",
@@ -139,12 +139,10 @@ function intro() {
       document.body.style.overflow = "";
       document.querySelector(".intro").style.display = "none";
     },
-
-    delay: 1.5,
   });
   timeline.from(".bar", {
     width: 0,
-    duration: 2.2,
+    duration: 2.5,
     ease: "power4.inOut",
   });
 
@@ -178,7 +176,7 @@ function intro() {
   timeline.to(
     ".bar-container",
     {
-      xPercent: 100,
+      x: "100vw",
       duration: 1.8,
       ease: "power4.inOut",
     },
@@ -209,7 +207,7 @@ function runCounter() {
     if (currentValue > 100) currentValue = 100;
 
     counter.innerHTML = `${currentValue}%`;
-    const delay = Math.floor(Math.random() * 200) + 100;
+    const delay = Math.floor(Math.random() * 100) + 100;
     setTimeout(startCounter, delay);
   }
   startCounter();
