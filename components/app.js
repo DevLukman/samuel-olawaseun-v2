@@ -109,8 +109,6 @@ function activeLink() {
   });
 }
 
-//Navbar
-
 //Dark theme
 function lightDarkTheme() {
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -187,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //For Footer
-    SplitText.create(".footer-content-1 h3", {
+    SplitText.create(".footer-content-1 p", {
       type: "chars",
       mask: "chars",
       smartWrap: true,
@@ -197,11 +195,11 @@ document.addEventListener("DOMContentLoaded", function () {
           ease: "power4.inOut",
           duration: 1,
           stagger: 0.05,
-          delay: 0.4,
+          delay: 0.2,
           onComplete: () => self.revert(),
           scrollTrigger: {
-            trigger: ".footer-content-1 h3",
-            start: "clamp(top 90%)",
+            trigger: ".footer-content-1 p",
+            start: "clamp(top 80%)",
             end: "clamp(center bottom)",
           },
         });

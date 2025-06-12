@@ -780,7 +780,7 @@ h5 {
   flex-direction: column;
 }
 
-.footer-content-1 h3 {
+.footer-content-1 p {
   font-size: 10vw;
   text-transform: uppercase;
   font-family: editor;
